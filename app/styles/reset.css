@@ -134,59 +134,143 @@ code {
 */
 
 @font-face {
-  font-family: 'Domaine Display'; 
-  src: url('/fonts/DomaineDisp-Medium.otf') format('otf'), 
-  font-weight: 500;
+  font-display: swap;
+  font-family: "Domaine Display";
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Domaine Display'; 
-  src: url('/fonts/DomaineDisp-Regular.otf') format('otf'), 
   font-weight: 400;
-  font-style: normal;
+  src: url(https://cdn.shopify.com/s/files/1/0150/6262/files/DomaineDisp-Regular.otf) format("truetype")
 }
 
 @font-face {
-  font-family: 'Domaine Text'; 
-  src: url('/fonts/DomaineText-Bold.otf') format('otf'), 
-  font-weight: 600;
+  font-display: swap;
+  font-family: "Domaine Display";
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'DomaineText-Medium'; 
-  src: url('/fonts/DomaineText-Medium (1).otf') format('otf'), 
   font-weight: 500;
-  font-style: normal;
+  src: url(https://cdn.shopify.com/s/files/1/0150/6262/files/DomaineDisp-Medium.otf) format("truetype")
 }
 
 @font-face {
-  font-family: 'Domaine Text'; 
-  src: url('/fonts/DomaineText-Regular (1).otf') format('otf'), 
-  font-weight: 400;
+  font-display: swap;
+  font-family: "Domaine Text";
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Domaine Text'; 
-  src: url('/fonts/DomaineText-Light.otf') format('otf'), 
   font-weight: 300;
+  src: url(https://cdn.shopify.com/s/files/1/0150/6262/files/DomaineText-Light.otf) format("truetype")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Domaine Text";
   font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn.shopify.com/s/files/1/0150/6262/files/DomaineText-Regular.otf) format("truetype")
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #2d2a24;
-  font-family: "Domaine Display", sans-serif;
-  letter-spacing: -.01em;
-  line-height: 110%;
+@font-face {
+  font-display: swap;
+  font-family: "Domaine Text";
+  font-style: normal;
   font-weight: 500;
+  src: url(https://cdn.shopify.com/s/files/1/0150/6262/files/DomaineText-Medium.otf) format("truetype")
 }
 
-a, li, p, span {
+@font-face {
+  font-display: swap;
+  font-family: "Domaine Text";
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://cdn.shopify.com/s/files/1/0150/6262/files/DomaineText-Bold.otf) format("truetype")
+}
+
+body,html {
+  font-family: "Domaine Text"
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #2d2a24;
+  font-family: "Domaine Display";
+  letter-spacing: -.01em;
+  line-height: 110%
+}
+
+h1 {
+  font-size: 68px
+}
+
+h2 {
+  font-size: 60px
+}
+
+h3 {
+  font-size: 56px
+}
+
+h1.article__title,h4 {
+  font-size: 48px
+}
+
+h5 {
+  font-size: 42px
+}
+
+h1.main-product-title,h6 {
+  font-size: 36px
+}
+
+a,li,p,span {
   color: #2d2a24;
   font-family: "Domaine Text";
   font-size: 16px;
-  line-height: 150%;
-  font-weight: 400;
+  line-height: 150%
+}
+
+@media(max-width: 480px) {
+  h1 {
+      font-size:42px
+  }
+
+  h2 {
+      font-size: 36px
+  }
+
+  h3 {
+      font-size: 32px
+  }
+
+  h1.article__title,h4 {
+      font-size: 28px
+  }
+
+  h5 {
+      font-size: 24px
+  }
+
+  h1.main-product-title,h6 {
+      font-size: 21px
+  }
+}
+
+@media(min-width: 480px)and (max-width:1024px) {
+  h1 {
+      font-size:45px
+  }
+
+  h2 {
+      font-size: 41px
+  }
+
+  h3 {
+      font-size: 37px
+  }
+
+  h1.article__title,h4 {
+      font-size: 33px
+  }
+
+  h5 {
+      font-size: 29px
+  }
+
+  h1.main-product-title,h6 {
+      font-size: 25px
+  }
 }
