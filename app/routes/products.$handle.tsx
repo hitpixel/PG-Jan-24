@@ -157,7 +157,7 @@ function ProductMain({
   const {title, descriptionHtml} = product;
   return (
     <div className="product-main">
-      <h1>{title}</h1>
+      <h1 class="font-medium main-product-title">{title}</h1>
       <ProductPrice selectedVariant={selectedVariant} />
       <br />
       <Suspense

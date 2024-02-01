@@ -274,3 +274,11 @@ a,li,p,span {
       font-size: 25px
   }
 }
+
+h1.main-product-title, h6 {
+  font-size: 36px;
+}
+
+.font-medium {
+  font-weight: 500;
+}
