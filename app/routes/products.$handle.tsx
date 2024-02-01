@@ -201,7 +201,7 @@ function ProductPrice({
 }) {
   return (
     <div className="product-price">
-      <div class="flex items-center sm:text-2xl font-medium text-base" >{selectedVariant?.compareAtPrice ? (
+      {selectedVariant?.compareAtPrice ? (
         <>
           <p>Sale</p>
           <br />
@@ -214,7 +214,7 @@ function ProductPrice({
         </>
       ) : (
         selectedVariant?.price && <Money data={selectedVariant?.price} />
-      )}</div>
+      )
     </div>
   );
 }
