@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 export default {
-  content: [./app/routes .{html,js,tsx}],
+  content: '[./app/routes/*.{html,js,tsx}]',
   theme: {
 
     *,:after,:before {
